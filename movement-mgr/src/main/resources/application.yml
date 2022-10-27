@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: movement-mgr
+    title: IVL Movement Manager (M2)
+    version: 0.1
+    url: http://localhost
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        default_schema: cs
+        jdbc:
+          time_zone: Asia/Calcutta
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+  jackson:
+    time-zone: Asia/Calcutta
