@@ -18,6 +18,9 @@ pipeline {
             }
             steps {
                 echo 'Deploying....'
+                sh '''
+                cat README.md
+                '''
             }
         }
     }
