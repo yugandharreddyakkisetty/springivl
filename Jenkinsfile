@@ -13,6 +13,9 @@ pipeline {
             }
         }
         stage('Deploy') {
+            when {
+                branch "fix-*"
+            }
             steps {
                 echo 'Deploying....'
             }
